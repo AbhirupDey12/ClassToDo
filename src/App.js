@@ -30,10 +30,10 @@ class App extends Component {
     return (
       <div style={style}>
 
-        
-
         {/* <ClickCounter /> */}
-        {/* <HoverCounter /> */}
+        <HoverCounter name = "Vishwas" />
+
+        
         {/* <Hero heroName="Batman" />
           <Hero heroName="Superman" />
         <ErrorBoundary>
