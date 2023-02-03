@@ -9,6 +9,11 @@ import RefsDemo from "./component/RefsDemo";
 import Input from "./component/Input";
 import FocusInput from "./component/FocusInput";
 import FRParentInput from "./component/FRParentInput";
+import PortalDemo from "./component/PortalDemo";
+import Hero from "./component/Hero";
+import ErrorBoundary from "./component/ErrorBoundary";
+import ClickCounter from "./component/ClickCounter";
+import HoverCounter from "./component/HoverCounter";
 
 const style = {
   textAlign: "center"
@@ -17,7 +22,6 @@ const style = {
 class App extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
     }
   }
@@ -25,7 +29,18 @@ class App extends Component {
   render() {
     return (
       <div style={style}>
-        <FRParentInput />
+
+        
+
+        {/* <ClickCounter /> */}
+        {/* <HoverCounter /> */}
+        {/* <Hero heroName="Batman" />
+          <Hero heroName="Superman" />
+        <ErrorBoundary>
+          <Hero heroName="Joker" />
+        </ ErrorBoundary> */}
+        {/* <PortalDemo /> */}
+        {/* <FRParentInput /> */}
         {/* <RefsDemo /> */}
         {/* <ParentComp /> */}
         {/* <Table /> */}
