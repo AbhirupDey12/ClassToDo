@@ -28,14 +28,26 @@ import HookCounter from "./component/HookCounter";
 import HookCounter2 from "./component/HookCounter2";
 import HookCounterThree from "./component/HookCounterThree";
 import HookCounter4 from "./component/HookCounter4";
+import ClassCounterOne from "./component/ClassCounterOne";
+import HookCounterOne from "./component/HookCounterOne";
 
 export default function App() {
   return (
+    <>
+      <HookCounterOne />
+      {/* <ClassCounterOne /> */}
+    </>
 
-    <h1>Hello</h1>
-    
-    )
+  )
 };
+
+
+
+
+
+
+
+
 
 
 // <HookCounter4 />
