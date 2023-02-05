@@ -30,18 +30,64 @@ import HookCounterThree from "./component/HookCounterThree";
 import HookCounter4 from "./component/HookCounter4";
 import ClassCounterOne from "./component/ClassCounterOne";
 import HookCounterOne from "./component/HookCounterOne";
+import HookMouse from "./component/HookMouse";
+import MouseContainer from "./component/MouseContainer";
+import IntervalClassCounter from "./component/IntervalClassCounter";
+import IntervalHookCounter from "./component/IntervalHookCounter";
+import DataFetching from "./component/DataFetching";
+import ComponentCC from "./component/ComponentCC";
+import Counter1 from "./component/Counter1";
+import Counter2 from "./component/Counter2";
+import Counter3 from "./component/Counter3";
+import DataFetching1 from "./component/DataFetching1";
+import DataFetchingTwo from "./component/DataFetchingTwo";
+import ParentComponent from "./component/ParentComponent";
+import Counterr from "./component/Counterr";
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
+
+const style = {
+  textAlign: 'center'
+}
 
 export default function App() {
   return (
-    <>
-      <HookCounterOne />
-      {/* <ClassCounterOne /> */}
-    </>
+
+    <div style={style} >
+      
+
+    </div>
 
   )
 };
 
+{/* <Counterr /> */ }
+{/* <ParentComponent /> */ }
+{/* <DataFetchingTwo /> */ }
 
+
+
+{/* <Counter1 /> */ }
+{/* <Counter2 /> */ }
+{/* <Counter3 /> */ }
+
+
+
+
+{/* <UserContext.Provider value={"Vishwas"} >
+        <ChannelContext.Provider value = {'Codevolution'}>
+          <ComponentCC />
+        </ChannelContext.Provider>
+      </UserContext.Provider> */}
+
+{/* <DataFetching /> */ }
+{/* <IntervalHookCounter /> */ }
+{/* <IntervalClassCounter /> */ }
+{/* <MouseContainer /> */ }
+{/* <HookMouse /> */ }
+{/* <HookCounterOne /> */ }
+{/* <ClassCounterOne /> */ }
 
 
 
