@@ -69,7 +69,7 @@ export default function App() {
 
 
 {/* <Counter1 /> */ }
-{/* <Counter2 /> */ }
+{/* <Counter2    /> */ }
 {/* <Counter3 /> */ }
 
 
