@@ -23,29 +23,12 @@
 // import PostForm from "./component/PostForm";
 
 import React from "react";
-import ClassCounter from "./component/ClassCounter";
-import HookCounter from "./component/HookCounter";
-import HookCounter2 from "./component/HookCounter2";
-import HookCounterThree from "./component/HookCounterThree";
-import HookCounter4 from "./component/HookCounter4";
-import ClassCounterOne from "./component/ClassCounterOne";
-import HookCounterOne from "./component/HookCounterOne";
-import HookMouse from "./component/HookMouse";
-import MouseContainer from "./component/MouseContainer";
-import IntervalClassCounter from "./component/IntervalClassCounter";
-import IntervalHookCounter from "./component/IntervalHookCounter";
-import DataFetching from "./component/DataFetching";
-import ComponentCC from "./component/ComponentCC";
-import Counter1 from "./component/Counter1";
-import Counter2 from "./component/Counter2";
-import Counter3 from "./component/Counter3";
-import DataFetching1 from "./component/DataFetching1";
-import DataFetchingTwo from "./component/DataFetchingTwo";
-import ParentComponent from "./component/ParentComponent";
-import Counterr from "./component/Counterr";
+import FocusInput1 from "./component/FocusInput1";
+import ClassTimer from "./component/ClassTimer";
+import HookTimer from "./component/HookTimer";
 
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
 
 const style = {
   textAlign: 'center'
@@ -55,6 +38,7 @@ export default function App() {
   return (
 
     <div style={style} >
+
       
 
     </div>
@@ -71,6 +55,9 @@ export default function App() {
 {/* <Counter1 /> */ }
 {/* <Counter2    /> */ }
 {/* <Counter3 /> */ }
+{/* <FocusInput1 /> */ }
+{/* <ClassTimer />
+<HookTimer /> */}
 
 
 
