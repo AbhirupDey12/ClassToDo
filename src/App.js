@@ -26,6 +26,11 @@ import React from "react";
 import FocusInput1 from "./component/FocusInput1";
 import ClassTimer from "./component/ClassTimer";
 import HookTimer from "./component/HookTimer";
+import DocTitleOne from "./component/DocTitleOne";
+import DocTitleTwo from "./component/DocTitleTwo";
+import Counter11 from "./component/Counter11";
+import Counter22 from "./component/Counter22";
+import UserForm from "./component/UserForm";
 
 // export const UserContext = React.createContext();
 // export const ChannelContext = React.createContext();
@@ -45,6 +50,16 @@ export default function App() {
 
   )
 };
+
+
+{/* 
+      <UserForm /> */}
+
+{/* <Counter11 />
+      <Counter22 /> */}
+
+{/* <DocTitleOne /> */ }
+{/* <DocTitleTwo /> */ }
 
 {/* <Counterr /> */ }
 {/* <ParentComponent /> */ }
