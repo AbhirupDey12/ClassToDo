@@ -1,39 +1,21 @@
-// import Form from "./component/Form";
-// import LifecycleA from "./component/LifecycleA";
-// import FragmentDemo from "./component/FragmentDemo";
-// import Table from "./component/Table";
-// import PureComp from "./component/PureComp";
-// import ParentComp from "./component/ParentComp";
-// import RefsDemo from "./component/RefsDemo";
-// import Input from "./component/Input";
-// import FocusInput from "./component/FocusInput";
-// import FRParentInput from "./component/FRParentInput";
-// import PortalDemo from "./component/PortalDemo";
-// import Hero from "./component/Hero";
-// import ErrorBoundary from "./component/ErrorBoundary";
-// import ClickCounter from "./component/ClickCounter";
-// import HoverCounter from "./component/HoverCounter";
-// import ClickCounter2 from "./component/ClickCounter2";
-// import HoverCounter2 from "./component/HoverCounter2";
-// import User from "./component/User";
-// import Counter from "./component/Counter";
-// import ComponentC from "./component/ComponentC";
-// import { UserProvider } from "./component/userContext";
-// import PostList from "./component/PostList";
-// import PostForm from "./component/PostForm";
-
 import React from "react";
-import FocusInput1 from "./component/FocusInput1";
-import ClassTimer from "./component/ClassTimer";
-import HookTimer from "./component/HookTimer";
-import DocTitleOne from "./component/DocTitleOne";
-import DocTitleTwo from "./component/DocTitleTwo";
-import Counter11 from "./component/Counter11";
-import Counter22 from "./component/Counter22";
-import UserForm from "./component/UserForm";
-
-// export const UserContext = React.createContext();
-// export const ChannelContext = React.createContext();
+import { Routes, Route } from 'react-router-dom';
+import Home from "./component/Home";
+import About from "./component/About";
+import Navbar from "./component/Navbar";
+import './index.css'
+import OrderSummary from "./component/OrderSummary";
+import NoMatch from "./component/NoMatch";
+import Products from "./component/Products";
+import FeaturedProducts from "./component/FeaturedProducts";
+import NewProducts from "./component/NewProducts";
+import Users from "./component/Users";
+import UserDetails from "./component/UserDetails";
+import Admin from "./component/Admin";
+import Profile from "./component/Profile";
+import { AuthProvider } from "./component/auth";
+import { Login } from "./component/Login";
+import { RequireAuth } from "./component/RequireAuth";
 
 const style = {
   textAlign: 'center'
@@ -42,54 +24,33 @@ const style = {
 export default function App() {
   return (
 
-    <div style={style} >
-
-      
-
-    </div>
+    <>
+      <AuthProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="order-summary" element={<OrderSummary />} />
+          <Route path="products" element={<Products />} >
+            <Route index element={<FeaturedProducts />} />
+            <Route path='featured' element={<FeaturedProducts />} />
+            <Route path="new" element={<NewProducts />} />
+          </Route>
+          <Route path='users' element={<Users />} >
+            <Route path=":userId" element={<UserDetails />} />
+            <Route path="admin" element={<Admin />} />
+          </Route>
+          <Route path="profile" element={<RequireAuth><Profile /></RequireAuth>} />
+          <Route path="login" element={<Login />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </AuthProvider>
+    </>
 
   )
 };
 
 
-{/* 
-      <UserForm /> */}
-
-{/* <Counter11 />
-      <Counter22 /> */}
-
-{/* <DocTitleOne /> */ }
-{/* <DocTitleTwo /> */ }
-
-{/* <Counterr /> */ }
-{/* <ParentComponent /> */ }
-{/* <DataFetchingTwo /> */ }
-
-
-
-{/* <Counter1 /> */ }
-{/* <Counter2    /> */ }
-{/* <Counter3 /> */ }
-{/* <FocusInput1 /> */ }
-{/* <ClassTimer />
-<HookTimer /> */}
-
-
-
-
-{/* <UserContext.Provider value={"Vishwas"} >
-        <ChannelContext.Provider value = {'Codevolution'}>
-          <ComponentCC />
-        </ChannelContext.Provider>
-      </UserContext.Provider> */}
-
-{/* <DataFetching /> */ }
-{/* <IntervalHookCounter /> */ }
-{/* <IntervalClassCounter /> */ }
-{/* <MouseContainer /> */ }
-{/* <HookMouse /> */ }
-{/* <HookCounterOne /> */ }
-{/* <ClassCounterOne /> */ }
 
 
 
@@ -98,11 +59,24 @@ export default function App() {
 
 
 
-// <HookCounter4 />
-// <HookCounterThree />
-// <HookCounter />
-//  <HookCounter2 />
-// <ClassCounter />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let key = "2629cb07f801fedceda63abc5f4d1c51";
 // let city = 'London';
 
